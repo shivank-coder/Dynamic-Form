@@ -70,7 +70,6 @@ Technologies Used
 React: For building the UI components.
 CSS: For styling the application.
 JavaScript (ES6+): For handling application logic.
-Screenshots
 Add screenshots of the application here to demonstrate its functionality.
 
 Future Enhancements
