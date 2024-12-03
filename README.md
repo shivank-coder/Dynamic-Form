@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+Dynamic Form Generator
+This is a React project that dynamically generates forms based on the selected type. Users can fill out the form, track their progress using a progress bar, and view submitted data in a table format. The application is styled using CSS and supports CRUD operations for managing submitted data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Dynamic Form Generation: Select different form types to generate custom forms.
+Progress Tracking: Shows a progress bar to indicate form completion.
+CRUD Operations: Add, view, and delete form entries dynamically.
+Table Management: Each form type has its own table, and tables are removed automatically when all entries are deleted.
+Responsive Design: The application is designed to adapt to various screen sizes.
+Form Types
+User Information
 
-## Available Scripts
+First Name (Required)
+Last Name (Required)
+Age (Optional)
+Address Information
 
-In the project directory, you can run:
+Street (Required)
+City (Required)
+State (Dropdown, Required)
+Zip Code (Optional)
+Payment Information
 
-### `npm start`
+Card Number (Required)
+Expiry Date (Required)
+CVV (Required)
+Cardholder Name (Required)
+Prerequisites
+Ensure you have the following installed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Node.js: Version 14 or higher
+npm: Comes bundled with Node.js
+A modern web browser (e.g., Chrome, Edge, Firefox)
+Installation and Running the Application
+Clone the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+git clone https://github.com/shivank-coder/Dynamic-Form.git
+cd dynamic-form-generator
+Install Dependencies
 
-### `npm test`
+bash
+Copy code
+npm install
+Start the Development Server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+npm start
+Open the Application
 
-### `npm run build`
+Once the server starts, open your browser and navigate to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+arduino
+Copy code
+http://localhost:3000
+File Structure
+DynamicForm.js: Contains the main logic for form generation, CRUD operations, and table management.
+index.js: Entry point of the application.
+App.js: Root component where DynamicForm is used.
+App.css: Styles for the application.
+Usage
+Select a form type from the dropdown.
+Fill out the fields as per the form requirements.
+Submit the form to view the data in the corresponding table.
+Use the Delete button to remove specific entries.
+Once all entries for a form type are deleted, the table is automatically removed.
+Technologies Used
+React: For building the UI components.
+CSS: For styling the application.
+JavaScript (ES6+): For handling application logic.
+Screenshots
+Add screenshots of the application here to demonstrate its functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements
+Add persistent storage using local storage or a database.
+Support for editing existing entries.
+Integration with a backend API for data storage.
